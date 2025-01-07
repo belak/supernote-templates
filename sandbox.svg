@@ -1,0 +1,100 @@
+<svg version="1.1" width="1404" height="1872" xmlns="http://www.w3.org/2000/svg">
+  <!--
+  Supernote Nomad
+  Resolution: 1404x1872
+  PPI: 300
+
+  This means we can calculate the screen size by taking the resolution, dividing
+  by the PPI and multiplying by how many mm per inch (25.4).
+
+  Screen Size: 4.68in x 6.24in
+  Screen Size: 118.872mm x 158.496mm
+
+  PPmm = PPI / 25.4, or about 11.81102362
+  Additionally, when scaled using PPmm, 1px is roughly 0.08466667mm.
+
+  We use the screen size so we can more easily create grids based on mm without
+  doing crazy pixel math.
+  -->
+
+  <rect width="1404" height="1872" fill="#ffffff" />
+
+  <g stroke="#000000" stroke-width="1" fill="none">
+    <path d="M 0,0 L 1404,0 L 1404,1872 L 0,1872 Z" />
+  </g>
+
+  <!-- Top Bar -->
+  <rect width="1404" height="99" fill="#ff00ff" />
+
+  <!-- Side Bar -->
+  <rect width="99" height="1872" fill="#ff00ff" />
+
+  <g stroke="#333333" fill="none" stroke-width="0.08466667" stroke-dasharray="1 0.5" transform="scale(11.81102362 11.81102362)">
+    <!-- TODO: these should be templated somehow - it's all math and boilerplate -->
+    <path d="M 10,10 V 100"/>
+    <path d="M 15,10 V 100"/>
+    <path d="M 20,10 V 100"/>
+    <path d="M 25,10 V 100"/>
+    <path d="M 30,10 V 100"/>
+    <path d="M 35,10 V 100"/>
+    <path d="M 40,10 V 100"/>
+    <path d="M 45,10 V 100"/>
+    <path d="M 50,10 V 100"/>
+    <path d="M 55,10 V 100"/>
+    <path d="M 60,10 V 100"/>
+
+    <path d="M 10,10 H 100"/>
+    <path d="M 10,15 H 100"/>
+    <path d="M 10,20 H 100"/>
+    <path d="M 10,25 H 100"/>
+    <path d="M 10,30 H 100"/>
+    <path d="M 10,35 H 100"/>
+    <path d="M 10,40 H 100"/>
+    <path d="M 10,45 H 100"/>
+    <path d="M 10,50 H 100"/>
+    <path d="M 10,55 H 100"/>
+    <path d="M 10,60 H 100" stroke-dasharray="none"/>
+
+    <path d="M 10,110 H 100"/>
+    <path d="M 10,114 H 100"/>
+    <path d="M 10,118 H 100"/>
+    <path d="M 10,122 H 100"/>
+    <path d="M 10,126 H 100"/>
+    <path d="M 10,130 H 100"/>
+    <path d="M 10,134 H 100"/>
+    <path d="M 10,138 H 100"/>
+    <path d="M 10,142 H 100"/>
+
+    <path d="M 10,110 v 100"/>
+    <path d="M 14,110 v 100"/>
+    <path d="M 18,110 v 100"/>
+    <path d="M 22,110 v 100"/>
+    <path d="M 26,110 v 100"/>
+    <path d="M 30,110 v 100"/>
+    <path d="M 34,110 v 100"/>
+    <path d="M 38,110 v 100"/>
+    <path d="M 42,110 v 100"/>
+
+    <g fill="#333333">
+      <circle cx="32" cy="10" r="0.1"/>
+      <circle cx="35" cy="15" r="0.1"/>
+      <circle cx="35" cy="20" r="0.1"/>
+      <circle cx="35" cy="25" r="0.1"/>
+      <circle cx="35" cy="30" r="0.1"/>
+      <circle cx="35" cy="35" r="0.1"/>
+      <circle cx="35" cy="40" r="0.1"/>
+      <circle cx="35" cy="45" r="0.1"/>
+      <circle cx="35" cy="50" r="0.1"/>
+      <circle cx="35" cy="55" r="0.1"/>
+      <circle cx="35" cy="60" r="0.1"/>
+      <circle cx="35" cy="65" r="0.1"/>
+      <circle cx="35" cy="70" r="0.1"/>
+      <circle cx="35" cy="75" r="0.1"/>
+      <circle cx="35" cy="80" r="0.1"/>
+      <circle cx="35" cy="85" r="0.1"/>
+      <circle cx="35" cy="90" r="0.1"/>
+      <circle cx="35" cy="95" r="0.1"/>
+      <circle cx="35" cy="100" r="0.1"/>
+    </g>
+  </g>
+</svg>
