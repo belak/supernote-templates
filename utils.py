@@ -65,7 +65,7 @@ def generate_dot_grid(x: float, y: float, size: float, width: int, height: int):
                     fill="#000000",
                     cx=x + x_pos * size,
                     cy=y + y_pos * size,
-                    r=1,
+                    r=2,
                 )
             )
 

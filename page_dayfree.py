@@ -21,7 +21,7 @@ canvas = svg.SVG(
     width=1404,
     height=1872,
     elements=[
-        border(),
+        #border(),
         generate_grid(
             top_corner[0],
             top_corner[1],
