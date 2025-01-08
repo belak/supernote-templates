@@ -15,6 +15,8 @@
         packages = with pkgs; [
           python3
           poetry
+          reflex
+          overmind
         ];
 
         env = {

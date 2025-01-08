@@ -1,6 +1,23 @@
+from textwrap import dedent
+
 import svg
 
-PPI = 300
+# Supernote Nomad
+# Resolution: 1404x1872
+# PPI: 300
+#
+# This means we can calculate the screen size by taking the resolution, dividing
+# by the PPI and multiplying by how many mm per inch (25.4).
+#
+# Screen Size: 4.68in x 6.24in
+# Screen Size: 118.872mm x 158.496mm
+#
+# PPmm = PPI / 25.4, or about 11.81102362
+# Additionally, when scaled using PPmm, 1px is roughly 0.08466667mm.
+
+SCREEN_WIDTH = 1404.0
+SCREEN_HEIGHT = 1872.0
+PPI = 300.0
 MM = PPI / 25.4
 
 
@@ -58,32 +75,24 @@ def generate_dot_grid(x: float, y: float, size: float, width: int, height: int):
     )
 
 
-canvas = svg.SVG(
-    width=1404,
-    height=1872,
-    elements=[
-        # Top Bar
-        svg.Rect(width=1404, height=99, fill="#ff00ff"),
-        # Side Bar
-        svg.Rect(width=99, height=1872, fill="#ff00ff"),
-        # Outer line
-        svg.Path(
-            stroke="#000000",
-            fill="none",
-            stroke_width=1,
-            d=[
-                svg.M(0, 0),
-                svg.L(1404, 0),
-                svg.L(1404, 1872),
-                svg.L(0, 1872),
-                svg.Z(),
-            ],
-        ),
-        generate_grid(
-            10.0*MM, 10.0*MM, 4.0*MM, 27, 37, stroke_dasharray=[0.375 * MM, 0.25 * MM, 0.375 * MM, 0 * MM]
-        ),
-        # generate_dot_grid(10.0*MM, 10.0*MM, 4.0*MM, 27, 37),
-    ],
-)
+def top_bar():
+    return svg.Rect(width=1404, height=99, fill="#ff00ff")
 
-print(canvas)
+
+def side_bar():
+    return svg.Rect(width=99, height=1872, fill="#ff00ff")
+
+
+def border():
+    return svg.Path(
+        stroke="#000000",
+        fill="none",
+        stroke_width=1,
+        d=[
+            svg.M(0, 0),
+            svg.L(1404, 0),
+            svg.L(1404, 1872),
+            svg.L(0, 1872),
+            svg.Z(),
+        ],
+    )
