@@ -29,51 +29,88 @@
   <!-- Side Bar -->
   <rect width="99" height="1872" fill="#ff00ff" />
 
-  <g stroke="#333333" fill="none" stroke-width="0.08466667" stroke-dasharray="1 0.5" transform="scale(11.81102362 11.81102362)">
+  <g stroke="#333333" fill="none" stroke-width="0.08466667" transform="scale(11.81102362 11.81102362)">
     <!-- TODO: these should be templated somehow - it's all math and boilerplate -->
-    <path d="M 10,10 V 100"/>
-    <path d="M 15,10 V 100"/>
-    <path d="M 20,10 V 100"/>
-    <path d="M 25,10 V 100"/>
-    <path d="M 30,10 V 100"/>
-    <path d="M 35,10 V 100"/>
-    <path d="M 40,10 V 100"/>
-    <path d="M 45,10 V 100"/>
-    <path d="M 50,10 V 100"/>
-    <path d="M 55,10 V 100"/>
-    <path d="M 60,10 V 100"/>
+    <!--<g stroke-dasharray="0.375 0.25 0.375 0">-->
+    <g stroke-dasharray="0.5 0.25 0.5 0">
+      <path d="M 10,10 V 155"/>
+      <path d="M 15,10 V 155"/>
+      <path d="M 20,10 V 155"/>
+      <path d="M 25,10 V 155"/>
+      <path d="M 30,10 V 155"/>
+      <path d="M 35,10 V 155"/>
+      <path d="M 40,10 V 155"/>
+      <path d="M 45,10 V 155"/>
+      <path d="M 50,10 V 155"/>
+      <path d="M 55,10 V 155"/>
+      <path d="M 60,10 V 155"/>
+      <path d="M 65,10 V 155"/>
+      <path d="M 70,10 V 155"/>
+      <path d="M 75,10 V 155"/>
+      <path d="M 80,10 V 155"/>
+      <path d="M 85,10 V 155"/>
+      <path d="M 90,10 V 155"/>
+      <path d="M 95,10 V 155"/>
+      <path d="M 100,10 V 155"/>
+      <path d="M 105,10 V 155"/>
+      <path d="M 110,10 V 155"/>
+      <path d="M 115,10 V 155"/>
 
-    <path d="M 10,10 H 100"/>
-    <path d="M 10,15 H 100"/>
-    <path d="M 10,20 H 100"/>
-    <path d="M 10,25 H 100"/>
-    <path d="M 10,30 H 100"/>
-    <path d="M 10,35 H 100"/>
-    <path d="M 10,40 H 100"/>
-    <path d="M 10,45 H 100"/>
-    <path d="M 10,50 H 100"/>
-    <path d="M 10,55 H 100"/>
-    <path d="M 10,60 H 100" stroke-dasharray="none"/>
+      <path d="M 10,10 H 115"/>
+      <path d="M 10,15 H 115"/>
+      <path d="M 10,20 H 115"/>
+      <path d="M 10,25 H 115"/>
+      <path d="M 10,30 H 115"/>
+      <path d="M 10,35 H 115"/>
+      <path d="M 10,40 H 115"/>
+      <path d="M 10,45 H 115"/>
+      <path d="M 10,50 H 115"/>
+      <path d="M 10,55 H 115"/>
+      <path d="M 10,60 H 115"/>
+      <path d="M 10,65 H 115"/>
+      <path d="M 10,70 H 115"/>
+      <path d="M 10,75 H 115"/>
+      <path d="M 10,80 H 115"/>
+      <path d="M 10,85 H 115"/>
+      <path d="M 10,90 H 115"/>
+      <path d="M 10,95 H 115"/>
+      <path d="M 10,100 H 115"/>
+      <path d="M 10,105 H 115"/>
+      <path d="M 10,110 H 115"/>
+      <path d="M 10,115 H 115"/>
+      <path d="M 10,120 H 115"/>
+      <path d="M 10,125 H 115"/>
+      <path d="M 10,130 H 115"/>
+      <path d="M 10,135 H 115"/>
+      <path d="M 10,140 H 115"/>
+      <path d="M 10,145 H 115"/>
+      <path d="M 10,150 H 115"/>
+      <path d="M 10,155 H 115"/>
+    </g>
 
-    <path d="M 10,110 H 100"/>
-    <path d="M 10,114 H 100"/>
-    <path d="M 10,118 H 100"/>
-    <path d="M 10,122 H 100"/>
-    <path d="M 10,126 H 100"/>
-    <path d="M 10,130 H 100"/>
-    <path d="M 10,134 H 100"/>
-    <path d="M 10,138 H 100"/>
-    <path d="M 10,142 H 100"/>
+    <!--
+    <g stroke-dasharray="0.375 0.25 0.375 0">
+      <path d="M 10,110 H 100"/>
+      <path d="M 10,114 H 100"/>
+      <path d="M 10,118 H 100"/>
+      <path d="M 10,122 H 100"/>
+      <path d="M 10,126 H 100"/>
+      <path d="M 10,130 H 100"/>
+      <path d="M 10,134 H 100"/>
+      <path d="M 10,138 H 100"/>
+      <path d="M 10,142 H 100"/>
 
-    <path d="M 10,110 v 100"/>
-    <path d="M 14,110 v 100"/>
-    <path d="M 18,110 v 100"/>
-    <path d="M 22,110 v 100"/>
-    <path d="M 26,110 v 100"/>
-    <path d="M 30,110 v 100"/>
-    <path d="M 34,110 v 100"/>
-    <path d="M 38,110 v 100"/>
-    <path d="M 42,110 v 100"/>
+      <path d="M 10,110 v 100"/>
+      <path d="M 14,110 v 100"/>
+      <path d="M 18,110 v 100"/>
+      <path d="M 22,110 v 100"/>
+      <path d="M 26,110 v 100"/>
+      <path d="M 30,110 v 100"/>
+      <path d="M 34,110 v 100"/>
+      <path d="M 38,110 v 100"/>
+      <path d="M 42,110 v 100"/>
+    </g>
+    -->
 
     <g fill="#333333">
       <circle cx="32" cy="10" r="0.1"/>

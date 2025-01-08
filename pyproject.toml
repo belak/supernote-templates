@@ -1,0 +1,20 @@
+[tool.black]
+line-length = 100
+
+[tool.poetry]
+name = "supernote-templates"
+version = "0.1.0"
+description = ""
+authors = ["Kaleb Elwert <belak@coded.io>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+"svg.py" = "^1.5.0"
+
+[tool.poetry.dev-dependencies]
+black = "^24.10.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
