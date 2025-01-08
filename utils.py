@@ -84,15 +84,12 @@ def side_bar():
 
 
 def border():
-    return svg.Path(
-        stroke="#000000",
+    return svg.Rect(
+        x=0,
+        y=0,
+        width=SCREEN_WIDTH,
+        height=SCREEN_HEIGHT,
         fill="none",
+        stroke="#000000",
         stroke_width=1,
-        d=[
-            svg.M(0, 0),
-            svg.L(1404, 0),
-            svg.L(1404, 1872),
-            svg.L(0, 1872),
-            svg.Z(),
-        ],
     )
