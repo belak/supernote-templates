@@ -16,7 +16,7 @@
           python3
           poetry
           reflex
-          overmind
+          inkscape
         ];
 
         env = {
