@@ -1,9 +1,9 @@
-all: $(patsubst page_%.py,out/page_%.png,$(wildcard page_*.py))
+all: $(patsubst page_%.py,out/%.png,$(wildcard page_*.py))
 
-out/page_%.png: out/page_%.svg
+out/%.png: out/%.svg
 	inkscape $< -o $@ -b white --export-png-color-mode=Gray_16
 
-out/page_%.svg: page_%.py utils.py
+out/%.svg: page_%.py supernote_nomad.py utils.py
 	poetry run python $< > $@
 
 watch:
