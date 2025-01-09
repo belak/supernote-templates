@@ -21,21 +21,22 @@ canvas = svg.SVG(
     width=1404,
     height=1872,
     elements=[
-        #border(),
+        # border(),
         generate_grid(
             top_corner[0],
             top_corner[1],
             grid_size,
             grid_width,
             grid_height,
-            # stroke_dasharray=[0.375 * MM, 0.25 * MM, 0.375 * MM, 0 * MM],
+            stroke="#888888",
+            stroke_dasharray=[0.375 * MM, 0.25 * MM, 0.375 * MM, 0 * MM],
             # stroke_dasharray=[0.5 * MM, 0.25 * MM, 0.5 * MM, 0 * MM],
-            stroke_dasharray=[3, 3],
+            # stroke_dasharray=[3, 3],
         ),
         svg.Path(
             stroke="#000000",
             fill="none",
-            stroke_width=1,
+            stroke_width=2,
             d=[
                 svg.M(
                     x=top_corner[0] + offset_line * grid_size,

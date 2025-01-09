@@ -27,6 +27,7 @@ canvas = svg.SVG(
             grid_size,
             grid_width,
             grid_height,
+            fill="#888888",
         ),
     ],
 )

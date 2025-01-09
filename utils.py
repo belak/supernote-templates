@@ -21,13 +21,13 @@ PPI = 300.0
 MM = PPI / 25.4
 
 
-def generate_grid(x: float, y: float, size: float, width: int, height: int, **kwargs):
+def generate_grid(x: float, y: float, size: float, width: int, height: int, stroke: str="#000000", stroke_width=1, **kwargs):
     elements = []
     for x_pos in range(width + 1):
         elements.append(
             svg.Path(
-                stroke="#000000",
-                stroke_width=1,
+                stroke=stroke,
+                stroke_width=stroke_width,
                 d=[
                     svg.M(x + x_pos * size, y),
                     svg.v(size * height),
@@ -39,8 +39,8 @@ def generate_grid(x: float, y: float, size: float, width: int, height: int, **kw
     for y_pos in range(height + 1):
         elements.append(
             svg.Path(
-                stroke="#000000",
-                stroke_width=1,
+                stroke=stroke,
+                stroke_width=stroke_width,
                 d=[
                     svg.M(x, y + y_pos * size),
                     svg.h(size * width),
@@ -55,14 +55,14 @@ def generate_grid(x: float, y: float, size: float, width: int, height: int, **kw
     )
 
 
-def generate_dot_grid(x: float, y: float, size: float, width: int, height: int):
+def generate_dot_grid(x: float, y: float, size: float, width: int, height: int, fill="#000000"):
     elements = []
 
     for x_pos in range(width + 1):
         for y_pos in range(height + 1):
             elements.append(
                 svg.Circle(
-                    fill="#000000",
+                    fill=fill,
                     cx=x + x_pos * size,
                     cy=y + y_pos * size,
                     r=2,
