@@ -8,7 +8,6 @@ grid_size = 4.0 * MM
 grid_width = int(SCREEN_WIDTH // grid_size)
 grid_height = int(SCREEN_HEIGHT // grid_size)
 offset_line = 10
-
 dash_unit = grid_size / 18
 
 top_corner = (
@@ -34,7 +33,7 @@ canvas = svg.SVG(
             stroke="#888888",
             # stroke_dasharray=[0.375 * MM, 0.25 * MM, 0.375 * MM, 0 * MM],
             # stroke_dasharray=[0.5 * MM, 0.25 * MM, 0.5 * MM, 0 * MM],
-            stroke_dasharray=[dash_unit * 1, dash_unit * 1, dash_unit * 1, 0],
+            stroke_dasharray=[dash_unit * 2, dash_unit * 2, dash_unit * 2, 0],
         ),
         generate_grid(
             top_corner[0] + 10 * grid_size,
@@ -57,7 +56,7 @@ canvas = svg.SVG(
             stroke="#888888",
             # stroke_dasharray=[0.375 * MM, 0.25 * MM, 0.375 * MM, 0 * MM],
             # stroke_dasharray=[0.5 * MM, 0.25 * MM, 0.5 * MM, 0 * MM],
-            stroke_dasharray=[dash_unit * 1, dash_unit * 1, dash_unit * 1, 0],
+            stroke_dasharray=[dash_unit * 2, dash_unit * 2, dash_unit * 2, 0],
         ),
         svg.Path(
             stroke="#000000",
