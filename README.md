@@ -34,6 +34,11 @@ Free layout with some additional features - there is a date in the upper left
 and a mini task list in the upper right. This is a flexible layout which lets
 you build your own workflow.
 
+### Daily Planner (Manta)
+
+The same layout as the Daily Planner, but updated for the resolution of the A5X2
+Manta and using a 5mm grid rather than a 4mm grid.
+
 ## Building
 
 The build environment for this can be automatically set up if you're using Nix.
