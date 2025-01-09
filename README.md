@@ -59,3 +59,13 @@ $ make watch
 If you have ideas for new template designs, feel free to file an issue or submit
 a pull request. I can't promise everything will be accepted, but I'm happy to
 consider most ideas.
+
+## License
+
+These templates and the builder are released under the MIT license. You are
+welcome to include them in packages of templates, modify them to your needs, and
+even sell your own templates based on them. However, you must include the
+original LICENSE file along with any distribution of files based on this repo.
+
+Note that you are not required to submit your changes or improvements to this
+repo, but you are encouraged to do so if you are willing.
