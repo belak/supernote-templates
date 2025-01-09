@@ -2,7 +2,9 @@ from textwrap import dedent
 
 import svg
 
-from utils import MM, SCREEN_WIDTH, SCREEN_HEIGHT, generate_grid, generate_dot_grid, border
+from supernote_nomad import MM, SCREEN_WIDTH, SCREEN_HEIGHT, border
+from utils import generate_grid, generate_dot_grid
+
 
 grid_size = 4.0 * MM
 grid_width = int(SCREEN_WIDTH // grid_size)
@@ -19,8 +21,8 @@ text_spacing = 10 * grid_size / 7
 
 
 canvas = svg.SVG(
-    width=1404,
-    height=1872,
+    width=SCREEN_WIDTH,
+    height=SCREEN_HEIGHT,
     elements=[
         # border(),
         generate_grid(

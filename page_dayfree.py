@@ -2,7 +2,8 @@ from textwrap import dedent
 
 import svg
 
-from utils import MM, SCREEN_WIDTH, SCREEN_HEIGHT, generate_grid, generate_dot_grid, border
+from supernote_nomad import MM, SCREEN_WIDTH, SCREEN_HEIGHT, border
+from utils import generate_grid, generate_dot_grid
 
 
 grid_size = 4.0 * MM
@@ -18,8 +19,8 @@ top_corner = (
 
 
 canvas = svg.SVG(
-    width=1404,
-    height=1872,
+    width=SCREEN_WIDTH,
+    height=SCREEN_HEIGHT,
     elements=[
         # border(),
         generate_grid(
