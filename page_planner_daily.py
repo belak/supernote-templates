@@ -10,6 +10,7 @@ grid_height = 39
 offset_line = 10
 
 grid_size = 4.0 * MM
+dash_unit = grid_size / 18
 
 top_corner = (
     (SCREEN_WIDTH - grid_width * grid_size) / 2,
@@ -30,10 +31,11 @@ canvas = svg.SVG(
             grid_size,
             grid_width,
             grid_height - 4,
+            enable_border=False,
             stroke="#888888",
-            stroke_dasharray=[0.375 * MM, 0.25 * MM, 0.375 * MM, 0 * MM],
+            # stroke_dasharray=[0.375 * MM, 0.25 * MM, 0.375 * MM, 0 * MM],
             # stroke_dasharray=[0.5 * MM, 0.25 * MM, 0.5 * MM, 0 * MM],
-            # stroke_dasharray=[3, 3],
+            stroke_dasharray=[dash_unit * 1, dash_unit * 1, dash_unit * 1, 0],
         ),
         generate_grid(
             top_corner[0] + 10 * grid_size,
@@ -44,7 +46,7 @@ canvas = svg.SVG(
             stroke_width=2,
             # stroke_dasharray=[0.375 * MM, 0.25 * MM, 0.375 * MM, 0 * MM],
             # stroke_dasharray=[0.5 * MM, 0.25 * MM, 0.5 * MM, 0 * MM],
-            # stroke_dasharray=[3, 3],
+            # stroke_dasharray=[dash_unit * 1, dash_unit * 1, dash_unit * 1, 0],
         ),
         generate_grid(
             top_corner[0] + 11 * grid_size,
@@ -52,10 +54,11 @@ canvas = svg.SVG(
             grid_size,
             grid_width - 11,
             4,
+            enable_border=False,
             stroke="#888888",
-            stroke_dasharray=[0.375 * MM, 0.25 * MM, 0.375 * MM, 0 * MM],
+            # stroke_dasharray=[0.375 * MM, 0.25 * MM, 0.375 * MM, 0 * MM],
             # stroke_dasharray=[0.5 * MM, 0.25 * MM, 0.5 * MM, 0 * MM],
-            # stroke_dasharray=[3, 3],
+            stroke_dasharray=[dash_unit * 1, dash_unit * 1, dash_unit * 1, 0],
         ),
         svg.Path(
             stroke="#000000",

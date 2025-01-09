@@ -21,9 +21,13 @@ PPI = 300.0
 MM = PPI / 25.4
 
 
-def generate_grid(x: float, y: float, size: float, width: int, height: int, stroke: str="#000000", stroke_width=1, **kwargs):
+def generate_grid(x: float, y: float, size: float, width: int, height: int, enable_border=True, stroke: str="#000000", stroke_width=1, **kwargs):
     elements = []
-    for x_pos in range(width + 1):
+
+    start = 0 if enable_border else 1
+    end_offset = 1 if enable_border else 0
+
+    for x_pos in range(start, width + end_offset):
         elements.append(
             svg.Path(
                 stroke=stroke,
@@ -36,7 +40,7 @@ def generate_grid(x: float, y: float, size: float, width: int, height: int, stro
             )
         )
 
-    for y_pos in range(height + 1):
+    for y_pos in range(start, height + end_offset):
         elements.append(
             svg.Path(
                 stroke=stroke,
