@@ -5,16 +5,15 @@ import svg
 from utils import MM, SCREEN_WIDTH, SCREEN_HEIGHT, generate_grid, generate_dot_grid, border
 
 
-grid_width = 30
-grid_height = 40
+grid_size = 4.0 * MM
+grid_width = int(SCREEN_WIDTH // grid_size) + 1
+grid_height = int(SCREEN_HEIGHT // grid_size) + 1
 offset_line = 10
 
 top_corner = (
     (SCREEN_WIDTH - grid_width * 4.0 * MM) / 2,
     (SCREEN_HEIGHT - grid_height * 4.0 * MM) / 2,
 )
-
-grid_size = 4.0 * MM
 
 
 canvas = svg.SVG(

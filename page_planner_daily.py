@@ -4,12 +4,11 @@ import svg
 
 from utils import MM, SCREEN_WIDTH, SCREEN_HEIGHT, generate_grid, generate_dot_grid, border
 
-
-grid_width = 29
-grid_height = 39
+grid_size = 4.0 * MM
+grid_width = int(SCREEN_WIDTH // grid_size)
+grid_height = int(SCREEN_HEIGHT // grid_size)
 offset_line = 10
 
-grid_size = 4.0 * MM
 dash_unit = grid_size / 18
 
 top_corner = (
