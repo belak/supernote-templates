@@ -6,7 +6,7 @@ from supernote_nomad import MM, SCREEN_WIDTH, SCREEN_HEIGHT, border
 from utils import generate_grid, generate_dot_grid
 
 
-grid_size = 4.0 * MM
+grid_size = 5.0 * MM
 grid_width = int(SCREEN_WIDTH // grid_size)
 grid_height = int(SCREEN_HEIGHT // grid_size)
 
